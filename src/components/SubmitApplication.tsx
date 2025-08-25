@@ -2,187 +2,91 @@ import React from 'react';
 
 const SubmitApplication: React.FC = () => {
   return (
-    <section className='py-24 lg:py-32 bg-gradient-subtle relative overflow-hidden'>
-      {/* Professional Background Images */}
-      <div
-        className='absolute top-0 left-0 w-full h-full opacity-5'
-        style={{
-          backgroundImage:
-            'url(https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=1920&h=1080&auto=format&fit=crop&ixlib=rb-4.0.3)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat',
-        }}
-      ></div>
-
-      <div className='absolute top-20 right-20 w-96 h-96 bg-primary/5 rounded-full blur-3xl'></div>
-      <div className='absolute bottom-20 left-20 w-80 h-80 bg-primary-light/5 rounded-full blur-3xl'></div>
+    <section className='py-24 lg:py-32 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 relative overflow-hidden'>
+      {/* Background Elements */}
+      <div className='absolute top-20 right-20 w-96 h-96 bg-blue-200/20 rounded-full blur-3xl'></div>
+      <div className='absolute bottom-20 left-20 w-80 h-80 bg-indigo-200/20 rounded-full blur-3xl'></div>
 
       <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10'>
-        <div className='grid lg:grid-cols-2 gap-16 items-center'>
-          {/* Left side - Content */}
-          <div className='space-y-8'>
-            <div>
-              <h2 className='text-4xl md:text-5xl font-bold text-gray mb-6'>
-                Submit Your Application
-              </h2>
-              <p className='text-xl text-gray/80 leading-relaxed mb-8'>
-                Ready to join Central Florida's most distinguished business
-                community? Submit your application today and take the first step
-                toward recognition and growth.
+        <div className='text-center max-w-4xl mx-auto'>
+                                <div className='mb-16'>
+                        <h2 className='text-4xl md:text-5xl font-bold text-slate-900 mb-6'>
+                          Submit Your Application
+                        </h2>
+                        <p className='text-xl text-slate-600 leading-relaxed'>
+                          Ready to join Central Florida's most distinguished business
+                          community? Submit your application today and take the first step
+                          toward recognition and growth.
+                        </p>
+                      </div>
+
+          <div className='grid md:grid-cols-3 gap-8 mb-16'>
+            <div className='bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg p-8 border border-slate-200 hover:shadow-xl transition-all duration-300'>
+              <div className='w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mx-auto mb-6'>
+                <svg className='w-8 h-8 text-blue-600' fill='none' stroke='currentColor' viewBox='0 0 24 24'>
+                  <path strokeLinecap='round' strokeLinejoin='round' strokeWidth={2} d='M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z' />
+                </svg>
+              </div>
+                                        <h3 className='text-xl font-bold text-slate-900 mb-4 text-center'>
+                            Quick 5-Minute Process
+                          </h3>
+                          <p className='text-slate-600 text-center leading-relaxed'>
+                            Simple online form with straightforward questions about your company
+                          </p>
+            </div>
+
+            <div className='bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg p-8 border border-slate-200 hover:shadow-xl transition-all duration-300'>
+              <div className='w-16 h-16 bg-green-100 rounded-xl flex items-center justify-center mx-auto mb-6'>
+                <svg className='w-8 h-8 text-green-600' fill='none' stroke='currentColor' viewBox='0 0 24 24'>
+                  <path strokeLinecap='round' strokeLinejoin='round' strokeWidth={2} d='M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1' />
+                </svg>
+              </div>
+              <h3 className='text-xl font-bold text-slate-900 mb-4 text-center'>
+                No Application Fee
+              </h3>
+              <p className='text-slate-600 text-center leading-relaxed'>
+                Completely free to apply - no hidden costs or charges
               </p>
             </div>
 
-            <div className='space-y-6'>
-              <div className='flex items-start gap-4'>
-                <div className='w-8 h-8 bg-primary text-white rounded-lg flex items-center justify-center flex-shrink-0 mt-1'>
-                  <svg
-                    className='w-5 h-5'
-                    fill='currentColor'
-                    viewBox='0 0 20 20'
-                  >
-                    <path
-                      fillRule='evenodd'
-                      d='M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z'
-                      clipRule='evenodd'
-                    />
-                  </svg>
-                </div>
-                <div>
-                  <h3 className='text-xl font-bold text-gray mb-2'>
-                    Quick 5-Minute Process
-                  </h3>
-                  <p className='text-gray/70'>
-                    Simple online form with straightforward questions about your
-                    business
-                  </p>
-                </div>
+            <div className='bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg p-8 border border-slate-200 hover:shadow-xl transition-all duration-300'>
+              <div className='w-16 h-16 bg-indigo-100 rounded-xl flex items-center justify-center mx-auto mb-6'>
+                <svg className='w-8 h-8 text-indigo-600' fill='none' stroke='currentColor' viewBox='0 0 24 24'>
+                  <path strokeLinecap='round' strokeLinejoin='round' strokeWidth={2} d='M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z' />
+                </svg>
               </div>
-
-              <div className='flex items-start gap-4'>
-                <div className='w-8 h-8 bg-primary text-white rounded-lg flex items-center justify-center flex-shrink-0 mt-1'>
-                  <svg
-                    className='w-5 h-5'
-                    fill='currentColor'
-                    viewBox='0 0 20 20'
-                  >
-                    <path
-                      fillRule='evenodd'
-                      d='M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z'
-                      clipRule='evenodd'
-                    />
-                  </svg>
-                </div>
-                <div>
-                  <h3 className='text-xl font-bold text-gray mb-2'>
-                    No Application Fee
-                  </h3>
-                  <p className='text-gray/70'>
-                    Completely free to apply - no hidden costs or charges
-                  </p>
-                </div>
-              </div>
-
-              <div className='flex items-start gap-4'>
-                <div className='w-8 h-8 bg-primary text-white rounded-lg flex items-center justify-center flex-shrink-0 mt-1'>
-                  <svg
-                    className='w-5 h-5'
-                    fill='currentColor'
-                    viewBox='0 0 20 20'
-                  >
-                    <path
-                      fillRule='evenodd'
-                      d='M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z'
-                      clipRule='evenodd'
-                    />
-                  </svg>
-                </div>
-                <div>
-                  <h3 className='text-xl font-bold text-gray mb-2'>
-                    Instant Confirmation
-                  </h3>
-                  <p className='text-gray/70'>
-                    Immediate email confirmation with next steps
-                  </p>
-                </div>
-              </div>
+              <h3 className='text-xl font-bold text-slate-900 mb-4 text-center'>
+                Instant Confirmation
+              </h3>
+              <p className='text-slate-600 text-center leading-relaxed'>
+                Immediate email confirmation with next steps
+              </p>
             </div>
+          </div>
 
-            <div className='pt-6'>
+          <div className='bg-white/90 backdrop-blur-sm rounded-3xl shadow-xl p-12 border border-slate-200'>
+            <h3 className='text-3xl font-bold text-slate-900 mb-6'>
+              Ready to Get Started?
+            </h3>
+            <p className='text-slate-600 mb-10 max-w-2xl mx-auto leading-relaxed'>
+              Join our exclusive network of distinguished businesses and access unique
+              networking, visibility, and business growth opportunities.
+            </p>
+            <div className='flex flex-col sm:flex-row gap-6 justify-center items-center'>
               <a
                 href='https://forms.office.com/r/ez5w9LPJ4g?origin=lprLink'
                 target='_blank'
                 rel='noopener noreferrer'
-                className='inline-block bg-primary hover:bg-primary/90 text-white font-bold py-4 px-12 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-professional text-lg mr-6'
+                className='inline-block bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-semibold py-4 px-12 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl text-lg'
               >
                 Start Application →
               </a>
               <a
                 href='mailto:solutions@cfopro.io'
-                className='inline-block text-primary hover:text-primary/80 font-semibold text-lg border-b-2 border-primary/30 hover:border-primary transition-colors duration-300'
+                className='inline-block text-blue-600 hover:text-blue-700 font-semibold text-lg border-b-2 border-blue-300 hover:border-blue-600 transition-colors duration-300'
               >
                 Questions? Contact Us
               </a>
-            </div>
-          </div>
-
-          {/* Right side - Image Grid */}
-          <div className='grid grid-cols-2 gap-6'>
-            <div className='space-y-6'>
-              <div className='relative group overflow-hidden rounded-2xl shadow-professional hover:shadow-professional-lg transition-all duration-300'>
-                <img
-                  src='https://images.unsplash.com/photo-1560472354-b33ff0c44a43?q=80&w=600&h=800&auto=format&fit=crop&ixlib=rb-4.0.3'
-                  alt='Business application process'
-                  className='w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105'
-                  onError={(e) => {
-                    const target = e.target as HTMLImageElement;
-                    target.src =
-                      'https://via.placeholder.com/600x800/1976BB/FFFFFF?text=Business+Application';
-                  }}
-                />
-                <div className='absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300'></div>
-              </div>
-              <div className='relative group overflow-hidden rounded-2xl shadow-professional hover:shadow-professional-lg transition-all duration-300'>
-                <img
-                  src='https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=600&h=600&auto=format&fit=crop&ixlib=rb-4.0.3'
-                  alt='Professional networking'
-                  className='w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105'
-                  onError={(e) => {
-                    const target = e.target as HTMLImageElement;
-                    target.src =
-                      'https://via.placeholder.com/600x600/77D4FC/FFFFFF?text=Professional+Network';
-                  }}
-                />
-                <div className='absolute inset-0 bg-gradient-to-t from-primary-light/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300'></div>
-              </div>
-            </div>
-            <div className='space-y-6 pt-12'>
-              <div className='relative group overflow-hidden rounded-2xl shadow-professional hover:shadow-professional-lg transition-all duration-300'>
-                <img
-                  src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=600&h=600&auto=format&fit=crop&ixlib=rb-4.0.3'
-                  alt='Business recognition'
-                  className='w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105'
-                  onError={(e) => {
-                    const target = e.target as HTMLImageElement;
-                    target.src =
-                      'https://via.placeholder.com/600x600/677889/FFFFFF?text=Business+Recognition';
-                  }}
-                />
-                <div className='absolute inset-0 bg-gradient-to-t from-gray/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300'></div>
-              </div>
-              <div className='relative group overflow-hidden rounded-2xl shadow-professional hover:shadow-professional-lg transition-all duration-300'>
-                <img
-                  src='https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=600&h=800&auto=format&fit=crop&ixlib=rb-4.0.3'
-                  alt='Business growth'
-                  className='w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105'
-                  onError={(e) => {
-                    const target = e.target as HTMLImageElement;
-                    target.src =
-                      'https://via.placeholder.com/600x800/1976BB/FFFFFF?text=Business+Growth';
-                  }}
-                />
-                <div className='absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300'></div>
-              </div>
             </div>
           </div>
         </div>

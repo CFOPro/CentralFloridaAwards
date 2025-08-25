@@ -155,15 +155,15 @@ const Criteria: React.FC = () => {
       </div>
 
       <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10'>
-        <div className='text-center mb-16'>
-          <h2 className='text-4xl md:text-5xl font-bold text-gray mb-6'>
-            Qualification Criteria
-          </h2>
-          <p className='text-xl text-gray/80 max-w-3xl mx-auto leading-relaxed'>
-            To be eligible for the Central Florida Rising Businesses Awards,
-            your company should meet the following criteria:
-          </p>
-        </div>
+                            <div className='text-center mb-16'>
+                      <h2 className='text-4xl md:text-5xl font-bold text-gray mb-6'>
+                        Qualification Criteria
+                      </h2>
+                      <p className='text-xl text-gray/80 max-w-3xl mx-auto leading-relaxed'>
+                        To be eligible for the Central Florida Business Awards,
+                        your company should meet the following criteria:
+                      </p>
+                    </div>
 
         <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16'>
           {criteria.map((item, index) => (

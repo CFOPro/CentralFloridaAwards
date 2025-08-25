@@ -18,9 +18,9 @@ const Benefits: React.FC = () => {
           />
         </svg>
       ),
-      title: 'Exclusive Business Network',
+      title: 'Exclusive Networking Network',
       description:
-        'Connect with fellow award recipients and established business leaders across Central Florida. Build meaningful partnerships and expand your professional circle.',
+        'Connect with innovative entrepreneurs and established leaders in Central Florida. Build strategic alliances and expand your professional circle.',
     },
     {
       icon: (
@@ -40,7 +40,7 @@ const Benefits: React.FC = () => {
       ),
       title: 'Professional Recognition',
       description:
-        'Display your official award badge on your website, marketing materials, and social media to enhance credibility and attract quality clients.',
+        'Display your official badge on your website, marketing materials, and social media to enhance credibility and attract quality clients.',
     },
     {
       icon: (
@@ -60,7 +60,7 @@ const Benefits: React.FC = () => {
       ),
       title: 'Media Exposure',
       description:
-        'Benefit from press releases, social media features, and promotional opportunities that showcase your business achievements to a wider audience.',
+        'Benefit from press releases, social media features, and promotional opportunities that showcase your business achievements.',
     },
     {
       icon: (
@@ -80,7 +80,7 @@ const Benefits: React.FC = () => {
       ),
       title: 'Referral Opportunities',
       description:
-        "Gain access to our referral network where award recipients recommend each other's services, creating new business opportunities and revenue streams.",
+        'Access our referral network where participants recommend each other, creating new business opportunities.',
     },
     {
       icon: (
@@ -98,9 +98,9 @@ const Benefits: React.FC = () => {
           />
         </svg>
       ),
-      title: 'Business Growth Resources',
+      title: 'Growth Resources',
       description:
-        "Access exclusive workshops, business development tools, and mentorship opportunities designed to accelerate your company's growth trajectory.",
+        'Access exclusive workshops, business development tools, and mentorship opportunities to accelerate your company growth.',
     },
     {
       icon: (
@@ -154,7 +154,7 @@ const Benefits: React.FC = () => {
       <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10'>
         <div className='text-center mb-20'>
           <h2 className='text-4xl md:text-5xl font-bold text-gray mb-6'>
-            Why Apply for Recognition?
+            Why Apply?
           </h2>
           <p className='text-xl text-gray/80 max-w-3xl mx-auto leading-relaxed'>
             Join Central Florida's most prestigious business recognition program

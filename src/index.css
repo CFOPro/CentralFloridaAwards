@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 @layer base {
   html {
@@ -12,72 +14,47 @@
   }
 }
 
-@layer theme {
-  :root {
-    --primary: #1976BB;
-    --primary-light: #77D4FC;
-    --gray: #677889;
-    --white: #FFFFFF;
+@layer components {
+  /* Custom component styles */
+  .bg-gradient-primary {
+    background: linear-gradient(135deg, #1976BB 0%, #677889 50%, #77D4FC 100%);
+  }
+  
+  .shadow-professional {
+    box-shadow: 0 4px 6px -1px rgba(25, 118, 187, 0.1), 0 2px 4px -1px rgba(25, 118, 187, 0.06);
+  }
+  
+  .shadow-professional-lg {
+    box-shadow: 0 10px 15px -3px rgba(25, 118, 187, 0.1), 0 4px 6px -2px rgba(25, 118, 187, 0.05);
   }
 }
 
-/* Utility classes for exact colors */
-.text-primary {
-  color: #1976BB;
+@layer utilities {
+  /* Animation utilities */
+  .animate-blob {
+    animation: blob 7s infinite;
+  }
+  
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+  
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
 }
 
-.text-primary-light {
-  color: #77D4FC;
-}
-
-.text-gray {
-  color: #677889;
-}
-
-.bg-primary {
-  background-color: #1976BB;
-}
-
-.bg-primary-light {
-  background-color: #77D4FC;
-}
-
-.bg-gray {
-  background-color: #677889;
-}
-
-.bg-gradient-primary {
-  background: linear-gradient(135deg, #1976BB 0%, #77D4FC 100%);
-}
-
-.bg-gradient-subtle {
-  background: linear-gradient(135deg, #FFFFFF 0%, #F8FAFC 100%);
-}
-
-.border-primary {
-  border-color: #1976BB;
-}
-
-.border-primary-light {
-  border-color: #77D4FC;
-}
-
-.border-gray {
-  border-color: #677889;
-}
-
-.shadow-professional {
-  box-shadow: 0 4px 6px -1px rgba(25, 118, 187, 0.1), 0 2px 4px -1px rgba(25, 118, 187, 0.06);
-}
-
-.shadow-professional-lg {
-  box-shadow: 0 10px 15px -3px rgba(25, 118, 187, 0.1), 0 4px 6px -2px rgba(25, 118, 187, 0.05);
-}
-
-.shadow-modern {
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-}
-
-.shadow-modern-lg {
-  box-shadow: 0 25px 50px -12px rgba(25, 118, 187, 0.25);
+@keyframes blob {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(30px, -50px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
 }

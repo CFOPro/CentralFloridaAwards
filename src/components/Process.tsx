@@ -14,7 +14,7 @@ const Process: React.FC = () => {
       number: '02',
       title: 'Application Review',
       description:
-        'Our expert panel of business leaders and entrepreneurs carefully evaluates each application against our recognition criteria.',
+        'Our expert panel of business leaders carefully evaluates each application against our recognition criteria.',
       duration: '7-10 days',
       color: 'from-primary-light to-white',
     },
@@ -30,7 +30,7 @@ const Process: React.FC = () => {
       number: '04',
       title: 'Award Notification',
       description:
-        'Recipients are notified and invited to join our exclusive network of Central Florida Rising Businesses with full recognition benefits.',
+        'Recipients are notified and invited to join our exclusive network of Central Florida Business Awards with all benefits.',
       duration: 'Immediate',
       color: 'from-primary to-gray',
     },
@@ -259,7 +259,7 @@ const Process: React.FC = () => {
               href='https://forms.office.com/r/ez5w9LPJ4g?origin=lprLink'
               target='_blank'
               rel='noopener noreferrer'
-              className='inline-flex items-center gap-3 bg-gradient-modern text-white font-bold py-5 px-12 rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-modern-lg group text-lg'
+              className='inline-flex items-center gap-3 bg-gradient-modern text-black font-bold py-5 px-12 rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-modern-lg group text-lg'
             >
               <span>Begin Application Process</span>
               <svg
