@@ -1,14 +1,26 @@
-import React from 'react';
-import { Header, Hero, Benefits, Testimonials, CTA, Footer } from './components';
+import {
+  Benefits,
+  Criteria,
+  CTA,
+  Footer,
+  Gallery,
+  Header,
+  Hero,
+  Process,
+  SubmitApplication,
+} from './components';
 
 function App() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className='min-h-screen bg-white'>
       <Header />
       <main>
         <Hero />
         <Benefits />
-        <Testimonials />
+        <Gallery />
+        <Criteria />
+        <Process />
+        <SubmitApplication />
         <CTA />
       </main>
       <Footer />

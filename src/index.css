@@ -1,21 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
 
 @layer base {
   html {
     font-family: 'Inter', system-ui, sans-serif;
   }
-  
+
   body {
     margin: 0;
     padding: 0;
   }
 }
 
-/* Clases personalizadas para los colores */
+@layer theme {
+  :root {
+    --primary: #1976BB;
+    --primary-light: #77D4FC;
+    --gray: #677889;
+    --white: #FFFFFF;
+  }
+}
+
+/* Utility classes for exact colors */
 .text-primary {
   color: #1976BB;
 }
@@ -24,7 +30,7 @@
   color: #77D4FC;
 }
 
-.text-gray-custom {
+.text-gray {
   color: #677889;
 }
 
@@ -36,6 +42,43 @@
   background-color: #77D4FC;
 }
 
-.bg-gradient-custom {
+.bg-gray {
+  background-color: #677889;
+}
+
+.bg-gradient-primary {
   background: linear-gradient(135deg, #1976BB 0%, #77D4FC 100%);
+}
+
+.bg-gradient-subtle {
+  background: linear-gradient(135deg, #FFFFFF 0%, #F8FAFC 100%);
+}
+
+.border-primary {
+  border-color: #1976BB;
+}
+
+.border-primary-light {
+  border-color: #77D4FC;
+}
+
+.border-gray {
+  border-color: #677889;
+}
+
+.shadow-professional {
+  box-shadow: 0 4px 6px -1px rgba(25, 118, 187, 0.1), 0 2px 4px -1px rgba(25, 118, 187, 0.06);
+}
+
+.shadow-professional-lg {
+  box-shadow: 0 10px 15px -3px rgba(25, 118, 187, 0.1), 0 4px 6px -2px rgba(25, 118, 187, 0.05);
+}
+}
+
+.shadow-modern {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.shadow-modern-lg {
+  box-shadow: 0 25px 50px -12px rgba(25, 118, 187, 0.25);
 }
